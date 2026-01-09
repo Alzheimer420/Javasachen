@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Board board = new Board();
         Scanner scanner = new Scanner(System.in);
-        ComputerPlayer bot = new ComputerPlayer('O'); // Unser Computer-Gegner
+        ComputerPlayer bot = new ComputerPlayer('O');
         
         char currentPlayer = 'X';
         int turns = 0;
@@ -43,3 +43,4 @@ public class Main {
         System.out.println("Unentschieden!");
     }
 }
+
