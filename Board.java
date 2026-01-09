@@ -10,4 +10,12 @@ public class Board {
         System.out.println("---+---+---");
         System.out.println(" " + fields[6] + " | " + fields[7] + " | " + fields[8] + "\n");
     }
+    public boolean setField(int position, char symbol) {
+        
+        if (position >= 0 && position < 9 && fields[position] != 'X' && fields[position] != 'O') {
+            fields[position] = symbol;
+            return true;
+        }
+        return false;
+    }
 }
